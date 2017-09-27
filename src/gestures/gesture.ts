@@ -5,7 +5,7 @@ import { DIRECTION_HORIZONTAL, DIRECTION_VERTICAL, Hammer } from './hammer';
  * @hidden
  * A gesture recognizer class.
  *
- * TODO(mlynch): Re-enable the DOM event simulation that was causing issues (or verify hammer does this already, it might);
+ * TODO (mlynch): Re-enable the DOM event simulation that was causing issues (or verify hammer does this already, it might); id:41 gh:42
  */
 
 export class Gesture {

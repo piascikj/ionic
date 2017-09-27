@@ -82,7 +82,7 @@ export class PopoverCmp {
       this._enabled = true;
 
       // Subscribe to events in order to block gestures
-      // TODO, should we unsubscribe? memory leak?
+      // TODO , should we unsubscribe? memory leak? id:54 gh:55
       this._viewCtrl.willEnter.subscribe(this._viewWillEnter.bind(this));
       this._viewCtrl.didLeave.subscribe(this._viewDidLeave.bind(this));
     }

@@ -72,14 +72,14 @@ export class PageOne {
   }
 
   expandAction(item: ItemSliding, _: any, text: string) {
-    // TODO item.setElementClass(action, true);
+    // TODO item.setElementClass(action, true); id:0 gh:1
 
     setTimeout(() => {
       const toast = this.toastCtrl.create({
         message: text
       });
       toast.present();
-      // TODO item.setElementClass(action, false);
+      // TODO item.setElementClass(action, false); id:1 gh:2
       item.close();
 
       setTimeout(() => toast.dismiss(), 2000);

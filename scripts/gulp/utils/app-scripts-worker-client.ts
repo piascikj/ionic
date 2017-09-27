@@ -75,7 +75,7 @@ export function createWorker(msg: MessageToWorker): any {
       '--enableLint', 'false',
     ];
 
-    // TODO, use prod once we're a little more settled
+    // TODO , use prod once we're a little more settled id:4 gh:5
     if (!msg.isDev) {
       scriptArgs.push('--aot');
     }

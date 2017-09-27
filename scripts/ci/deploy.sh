@@ -36,7 +36,7 @@ function run {
 
   if [[ "$IS_RELEASE" == "true" ]]; then
     echo "RELEASE DETECTED!"
-    # TODO bump version number, github release, changelog, CDN, docs nav update
+    # TODO bump version number, github release, changelog, CDN, docs nav update id:5 gh:6
   fi
 
   # Update docs

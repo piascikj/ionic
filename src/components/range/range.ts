@@ -286,7 +286,7 @@ export class Range extends BaseInput<any> implements AfterContentInit, ControlVa
 
   /** @internal */
   _pointerDown(ev: UIEvent): boolean {
-    // TODO: we could stop listening for events instead of checking this._disabled.
+    // TODO: we could stop listening for events instead of checking this._disabled. id:29 gh:30
     // since there are a lot of events involved, this solution is
     // enough for the moment
     if (this._disabled) {
@@ -440,7 +440,7 @@ export class Range extends BaseInput<any> implements AfterContentInit, ControlVa
   _createTicks() {
     if (this._snaps) {
       this._dom.write(() => {
-        // TODO: Fix to not use RAF
+        // TODO: Fix to not use RAF id:35 gh:36
         this._ticks = [];
         for (var value = this._min; value <= this._max; value += this._step) {
           var ratio = this._valueToRatio(value);

@@ -27,7 +27,7 @@ exports.config = {
 
 // From https://github.com/angular/angular/blob/master/protractor-shared.js
 // Disable waiting for Angular as we don't have an integration layer yet...
-// TODO remove this once protractor supports angular2
+// TODO remove this once protractor supports angular2 id:6 gh:7
 function patchProtractorWait(browser) {
   browser.ignoreSynchronization = true;
   var _get = browser.get;
