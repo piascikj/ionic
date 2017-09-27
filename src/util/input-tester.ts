@@ -53,9 +53,9 @@ export interface TestConfig {
 
 
 export function commonInputTest<T>(input: BaseInput<T>, config: TestConfig) {
-  // TODO test form register/deregister
-  // TODO test item classes
-  // TODO test disable
+  // TODO test form register/deregister id:52 gh:53
+  // TODO test item classes id:60 gh:61
+  // TODO test disable id:53 gh:54
   const zone = new NgZone({ enableLongStackTrace: true });
   zone.run(() => {
     if (config.testItem === true && !input._item) {
@@ -206,7 +206,7 @@ function testWriteValue<T>(input: BaseInput<T>, config: TestConfig, isInit: bool
     input.value = test[0];
     assertEqual(ionChangeCalled, 0, 'loop: ionChange should not be called');
     assertEqual(OnChangeCalled, 0, 'loop: OnChangeCalled should not be called');
-    // TODO OnTouchedCalled?
+    // TODO OnTouchedCalled? id:59 gh:60
     OnTouchedCalled = OnChangeCalled = ionChangeCalled = 0;
   }
 
@@ -281,7 +281,7 @@ function testNgModelChange<T>(input: BaseInput<T>, config: TestConfig, isInit: b
     assertEqual(ionChangeCalled, 0, 'ionChange should not be called');
     assertEqual(OnChangeCalled, 0, 'OnChangeCalled should not be called');
 
-    // TODO OnTouchedCalled?
+    // TODO OnTouchedCalled? id:47 gh:48
     OnTouchedCalled = OnChangeCalled = ionChangeCalled = 0;
   }
 

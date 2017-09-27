@@ -269,7 +269,7 @@ export class ItemReorder implements ItemReorderGestureDelegate {
     let lastToIndex = this._lastToIndex;
     this._lastToIndex = toIndex;
 
-    // TODO: I think both loops can be merged into a single one
+    // TODO: I think both loops can be merged into a single one id:24 gh:25
     // but I had no luck last time I tried
 
     /********* DOM READ ********** */
